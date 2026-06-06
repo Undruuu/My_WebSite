@@ -19,7 +19,7 @@ jobs:
           port: 8888
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd home/devops/devops-lab/My_WebSite/
+            cd /home/devops/devops-lab/My_WebSite/
             git pull origin main
             sudo cp -r solo_project/* /var/www/solo_project/
             sudo systemctl reload nginx
